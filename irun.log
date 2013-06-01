@@ -1,0 +1,170 @@
+irun: *W,BADPRF: The -LINEDEBUG option may have an adverse performance impact.
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncvlog: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_bottomup_phase.svh,101|40): Virtual method 'uvm_bottomup_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncvlog: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_topdown_phase.svh,104|40): Virtual method 'uvm_topdown_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncvlog: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_task_phase.svh,133|40): Virtual method 'uvm_task_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+	Top level design units:
+		uvm_pkg
+		$unit_0x0891767a
+		top
+        .write(1),
+               |
+ncelab: *W,CUVMPW (/home/kserg/PROJS/PCIe/svn_repository/PCIE_3-0_IP/branches/TLP2PHY/project/source/pcie_core/data_link_layer/RX_DLLP_BLOCK/CRC_Check.v,53|15): port sizes differ in port connection (32/1).
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncelab: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_task_phase.svh,133|40): Virtual method 'uvm_task_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncelab: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_topdown_phase.svh,104|40): Virtual method 'uvm_topdown_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+  protected virtual function void execute(uvm_component comp,
+                                        |
+ncelab: *W,CVMPRO (/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_bottomup_phase.svh,101|40): Virtual method 'uvm_bottomup_phase::execute' method protected qualifier does not match base class 'uvm_phase'.
+SVSEED default: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /share3s/cads/INCISIV12.10.006/tools/inca/files/ncsimrc
+ncsim> source /share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/files/tcl/uvm_sim.tcl
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm top.tl2dll_tlp_if.clock top.tl2dll_tlp_if.tlp_bad top.tl2dll_tlp_if.tlp_data top.tl2dll_tlp_if.tlp_enable top.tl2dll_tlp_if.tlp_sop top.tl2dll_tlp_if.tlp_eop top.tl2dll_tlp_if.tlp_valid top.tl2dll_tlp_if.tlp_width top.dll2phy_tlp_tx.clock top.dll2phy_tlp_tx.seq_num top.dll2phy_tlp_tx.tlp_bad top.dll2phy_tlp_tx.tlp_data top.dll2phy_tlp_tx.tlp_enable top.dll2phy_tlp_tx.tlp_sop top.dll2phy_tlp_tx.tlp_eop top.dll2phy_tlp_tx.tlp_valid top.dll2phy_tlp_tx.tlp_width top.dll2phy_tlp_tx.tx_mac_lcrc top.phy2dll_dllp_rx.clock top.phy2dll_dllp_rx.dllp_data top.phy2dll_dllp_rx.dllp_valid top.dll_ctrl_stat_if.dll_ready top.dll_ctrl_stat_if.dll_reinitial top.dll_ctrl_stat_if.dll_up_down top.dll_ctrl_stat_if.reset_n top.dll_ctrl_stat_if.vc_status top.pm_tx_if.clock top.pm_tx_if.pm_strobe top.pm_tx_if.pm_type_value top.pm_tx_if.reset_n top.tl2dll_fc_if.__assert_1 top.tl2dll_fc_if.clock top.tl2dll_fc_if.fc_cmpl_cred top.tl2dll_fc_if.fc_cmpl_update top.tl2dll_fc_if.fc_init top.tl2dll_fc_if.fc_npost_cred top.tl2dll_fc_if.fc_npost_update top.tl2dll_fc_if.fc_post_cred top.tl2dll_fc_if.fc_post_update
+Created probe 1
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1a (12.10-s006)
+(C) 2007-2011 Mentor Graphics Corporation
+(C) 2007-2011 Cadence Design Systems, Inc.
+(C) 2006-2011 Synopsys, Inc.
+(C) 2011      Cypress Semiconductor Corp.
+----------------------------------------------------------------
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'tlp_packet_assembler#(T, P)' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_INFO @ 0: reporter [RNTST] Running test ...
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 59000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 59000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'h31230762 length 458 bytes
+UVM_INFO ./src_verif/env_pm/pm_driver.sv(82) @ 61000: dll_env.pm_env_inst.pm_agent_tx.driver [PM_DRIVER] M_Enter_L1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 61000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 63000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_pm/pm_driver.sv(82) @ 65000: dll_env.pm_env_inst.pm_agent_tx.driver [PM_DRIVER] M_Enter_L1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 65000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 67000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_pm/pm_driver.sv(82) @ 69000: dll_env.pm_env_inst.pm_agent_tx.driver [PM_DRIVER] M_Enter_L1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 69000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/scoreboard/sb_dllp.sv(63) @ 71000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] packet OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 71000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_pm/pm_driver.sv(82) @ 73000: dll_env.pm_env_inst.pm_agent_tx.driver [PM_DRIVER] M_Enter_L1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 73000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/scoreboard/sb_dllp.sv(63) @ 75000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] packet OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 75000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_pm/pm_driver.sv(82) @ 77000: dll_env.pm_env_inst.pm_agent_tx.driver [PM_DRIVER] M_Enter_L1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 77000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/scoreboard/sb_dllp.sv(63) @ 95000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] packet OK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 301000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'hdc0344b8 length 684 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 317000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 0 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 337000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    0
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 337000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 1873000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'hf78576ef length 68 bytes
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 1877000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'hf8dc48f1 length 656 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 1883000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 1 OK
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 1887000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 2 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 1983000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    1
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 1983000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 2099000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    2
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 2099000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 3065000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'h09164d12 length 403 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 3081000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 3 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 3183000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    3
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 3183000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 4431000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'h506aefa0 length 331 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 4445000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 4 OK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 4453000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'he69dd0cd length 439 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 4467000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 5 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 4667000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    5
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 4667000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 5379000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'h26c7134d length 728 bytes
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 5395000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 6 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 5643000: reporter@@dll2phy_ack_nak_response [RESP] NAK seq_num =    6
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 5643000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] NAK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 6285000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'h4277d784 length 176 bytes
+UVM_INFO ./src_verif/model/tlp_retry_buffer.sv(105) @ 6287000: dll_env.dll_model_inst.tlp_tl2phy_inst.tlp_retry_buffer_inst [RETRY BUFFER] retransmit seq_num = 6
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_tlp_driver.sv(146) @ 6297000: dll_env.tl2dll_tlp_env_inst.tl2dll_tlp_agent_tx.driver [TL2DLL_TLP_DRIVER] send TLP packet 'hc0a7e881 length 828 bytes
+UVM_INFO ./src_verif/model/tlp_retry_buffer.sv(105) @ 6313000: dll_env.dll_model_inst.tlp_tl2phy_inst.tlp_retry_buffer_inst [RETRY BUFFER] retransmit seq_num = 7
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 6317000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 7 OK
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 6351000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 6 OK
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 6397000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 7 OK
+UVM_INFO ./src_verif/scoreboard/sb_tlp.sv(73) @ 6409000: dll_env.dll_scoreboard_inst.sb_tlp_inst [SB_TLP] seq_num = 8 OK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 6551000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    6
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 6551000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 6803000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    7
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 6803000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_ack_nak_response.sv(45) @ 6889000: reporter@@dll2phy_ack_nak_response [RESP] ACK seq_num =    8
+UVM_INFO ./src_verif/env_dll2phy/dll2phy_dllp_driver.sv(83) @ 6889000: dll_env.dll2phy_env_inst.dll2phy_dllp_agent_rx.dll2phy_dllp_driver [PHY2DLL_DLLP] ACK
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_fc_driver.sv(124) @ 8179000: dll_env.tl2dll_fc_env_inst.tl2dll_fc_agent_tx.driver [TL2DLL_FC_DRIVER] UpdateFC_P
+UVM_INFO ./src_verif/env_tl2dll/tl2dll_fc_driver.sv(124) @ 8181000: dll_env.tl2dll_fc_env_inst.tl2dll_fc_agent_tx.driver [TL2DLL_FC_DRIVER] InitFC1_NP
+UVM_INFO @ 8201000: reporter [MISCMP] Miscompare for dllp_packet_item.dllp_type: lhs = DLL_PM_Enter_L1 : rhs = InitFC1_P_000
+UVM_INFO @ 8201000: reporter [MISCMP] 1 Miscompare(s) for object dllp_packet_item@37138 vs. dllp_packet_item@33080
+UVM_INFO ./src_verif/scoreboard/sb_dllp.sv(56) @ 8201000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] model:
+---------------------------------------------------------
+Name              Type              Size  Value          
+---------------------------------------------------------
+dllp_packet_item  dllp_packet       -     @33080         
+  dllp_type       dllp_packet_type  8     DLL_PM_Enter_L1
+  byte_1          integral          8     'h0            
+  byte_2          integral          8     'h0            
+  byte_3          integral          8     'h0            
+  crc             integral          16    'h65ad         
+---------------------------------------------------------
+UVM_INFO ./src_verif/scoreboard/sb_dllp.sv(58) @ 8201000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] DUT:
+---------------------------------------------------------
+Name              Type              Size  Value          
+---------------------------------------------------------
+dllp_packet_item  dllp_packet       -     @37138         
+  dllp_type       dllp_packet_type  8     InitFC1_P_000  
+  byte_1          integral          8     'h22           
+  byte_2          integral          8     'h81           
+  byte_3          integral          8     'h93           
+  crc             integral          16    'h83db         
+---------------------------------------------------------
+UVM_FATAL ./src_verif/scoreboard/sb_dllp.sv(60) @ 8201000: dll_env.dll_scoreboard_inst.sb_dllp_inst [SB_DLLP] wrong packet received
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   66
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[MISCMP]     2
+[PHY2DLL_DLLP]    19
+[PM_DRIVER]     5
+[RESP]     9
+[RETRY BUFFER]     2
+[RNTST]     1
+[SB_DLLP]     6
+[SB_TLP]    11
+[TL2DLL_FC_DRIVER]     2
+[TL2DLL_TLP_DRIVER]    10
+[TPRGED]     1
+Simulation complete via $finish(1) at time 8201 NS + 2
+/share3s/cads/INCISIV12.10.006/tools/uvm/uvm_lib/uvm_sv/sv/base/uvm_report_object.svh:277     $finish;
+ncsim> ^C
+ncsim> exit
